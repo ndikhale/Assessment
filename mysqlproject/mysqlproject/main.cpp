@@ -16,7 +16,7 @@ int main() {
 	conn = mysql_real_connect(conn, "localhost", "root", "", "companyassessment", 3306, NULL, 0);
 
 	if (conn) {
-		cout << "Successful connection to the database." << endl;
+		cout << "Successfull connection to the database." << endl;
 
 		cout << "Rule 1 Result:" << endl;
 
@@ -55,7 +55,7 @@ int main() {
 			}
 		}
 		else {
-			cout << "Query falied: " << mysql_error(conn) << endl;
+			cout << "Execution of Query failed: " << mysql_error(conn) << endl;
 		}
 
 		cout << endl;
@@ -87,7 +87,7 @@ int main() {
 			}
 		}
 		else {
-			cout << "Query falied: " << mysql_error(conn) << endl;
+			cout << "Execution of Query failed: " << mysql_error(conn) << endl;
 		}
 	}
 	else {
